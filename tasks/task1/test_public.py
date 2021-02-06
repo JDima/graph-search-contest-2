@@ -61,7 +61,7 @@ def test_task1(case: Case) -> None:
         if prev is None:
             prev = crossroads
             continue
-        assert case._roads_matrix[prev, crossroads] > 0
-        sum_value += case._roads_matrix[prev, crossroads]
+        assert case._roads_matrix[prev][crossroads] > 0
+        sum_value += case._roads_matrix[prev][crossroads]
         prev = crossroads
     assert sum_value == case.optimal_value
