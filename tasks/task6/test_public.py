@@ -4,7 +4,7 @@ from .task import task6
 
 
 class Case:
-    def __init__(self, name: str, n: int, edges: list, prob: list):
+    def __init__(self, name: str, n: int, edges: list, prob: float):
         self._name = name
         self.n = n
         self.edges = edges
@@ -41,6 +41,36 @@ TEST_CASES = [
         ],
         prob=0.71429,
     ),
+    Case(
+        name='base3',
+        n=10,
+        edges=[
+            (1, 2),
+            (2, 3),
+            (3, 4),
+            (2, 4),
+            (2, 5),
+            (5, 6),
+            (6, 7),
+            (5, 7),
+            (6, 9),
+            (9, 8),
+            (8, 10),
+            (10, 9)
+        ],
+        prob=0.80000,
+    ),
+    Case(
+        name='base4',
+        n=5,
+        edges=[
+            (1, 2),
+            (2, 3),
+            (3, 4),
+            (4, 5)
+        ],
+        prob=1.00000
+    )
 ]
 
 
