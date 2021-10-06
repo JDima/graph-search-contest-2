@@ -101,7 +101,7 @@ TEST_CASES = [
 
 
 @pytest.mark.parametrize('case', TEST_CASES, ids=str)
-def test_tast5(case: Case) -> None:
+def test_task5(case: Case) -> None:
     count = task5(
         n=case.n,
         edges=case.edges,
