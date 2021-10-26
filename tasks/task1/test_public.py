@@ -92,7 +92,7 @@ TEST_CASES = [
             (5, 3, 42),
             (3, 7, 1)
         ],
-        optimal_value=143,
+        optimal_value=102,
     ),
     Case(
         name='base7',
